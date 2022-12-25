@@ -420,7 +420,7 @@ google-maps
   position: relative;
 }
 
-.product-quality__row {
+.value__row {
   display: flex;
   flex-direction: column;
 }
@@ -452,13 +452,13 @@ google-maps
   margin-bottom: 12px;
 }
 
-.product-quality__wrapper {
+.value__wrapper {
   display: flex;
   flex-wrap: wrap;
   margin-top: 24px;
 }
 
-.product-quality {
+.value {
   padding: 0 24px;
   width: calc(100% / 3);
   display: flex;
@@ -469,7 +469,7 @@ google-maps
   margin: 32px 0;
 }
 
-.product-quality__img {
+.value__img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -484,31 +484,31 @@ google-maps
   transition: all 300ms ease;
 }
 
-.product-quality:hover .product-quality__img {
+.value:hover .value__img {
   background-color: #fb3e3e !important;
 }
 
-.product-quality:hover .product-quality__img {
+.value:hover .value__img {
   color: #fff !important;
 }
 
-.product-quality:hover {
+.value:hover {
   transform: translateY(-20px);
 }
 
-.product-quality__para {
+.value__para {
   text-align: center;
   max-width: 326px;
 }
 
-.product-quality__subtitle {
+.value__subtitle {
   padding-top: 16px;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
 }
 
-.product-quality__para {
+.value__para {
   color: #95a0ab !important;
   padding-top: 16px;
   font-size: 14px;
@@ -613,28 +613,28 @@ ABOUT US
 
 /* 
 
-google-maps
+PARTS
 
 */
 
-#google-maps {
+#parts {
   padding: 100px 0;
   position: relative;
 }
 
-.google-maps__bg--img {
+.parts__bg--img {
   background: url("./assets/google_maps.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.google-maps__content {
+.parts__content {
   text-align: center;
   z-index: 100;
 }
 
-.google-maps__content--title {
+.parts__content--title {
   color: #fff;
   font-size: 30px;
   font-weight: 500;
@@ -642,7 +642,7 @@ google-maps
   line-height: 1.2;
 }
 
-.google-maps__content--para {
+.parts__content--para {
   color: rgba(255, 255, 255, 0.7);
   font-size: 15px;
   max-width: 600px;
@@ -651,7 +651,7 @@ google-maps
   line-height: 24px;
 }
 
-.google-maps__btn {
+.parts__btn {
   background-color: #fff;
   border-color: #fff;
   color: #242424;
@@ -969,7 +969,7 @@ footer {
 }
 
 @media (max-width: 928px) {
-  .product-quality {
+  .value {
     width: 100%;
   }
 
@@ -985,11 +985,11 @@ footer {
     margin: 24px auto;
   }
 
-  .product-quality__subtitle {
+  .value__subtitle {
     width: 100%;
   }
 
-  .product-quality__para {
+  .value__para {
     max-width: 666px;
   }
 
