@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/favicon.ico">
+    <script src="https://kit.fontawesome.com/fe8d5b01c4.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_jl5VpeVakRdeOB5W1XDRJ");
+        })();
+    </script>
+    <title>Puff Point Vape Shop</title>
+</head>
+
+<body>
+    <section id="landing-page">
+        <nav class="fixed-top nav__custom">
+            <div class="nav__container ">
+                <div class="nav__logo">
+                    <a href="#" class="nav__logo--link text-uppercase" draggable="false">Puff Point</a>
+                </div>
+                <ul class="nav__link--list">
+                    <li class="nav__link">
+                        <a href="#product-quality" class="
+                        nav__link--anchor 
+                        link__hover-effect 
+                        link__hover-effect--white">
+                            Product Quality</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#builds" class="
+                        nav__link--anchor 
+                        link__hover-effect 
+                        link__hover-effect--white">
+                            Products</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#google-maps" class="
+                                    nav__link--anchor 
+                                    link__hover-effect 
+                                    link__hover-effect--white">
+                            Google Maps</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#about-us" class="
+                                    nav__link--anchor 
+                                    link__hover-effect
+                                    link__hover-effect--white">
+                            About</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#contact" class="
+                                    nav__link--anchor 
+                                    link__hover-effect 
+                                    link__hover-effect--white">
+                            Contact</a>
+                    </li>
+                </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#" class="menu__link link__hover-effect
+                                    link__hover-effect--white" onclick="closeMenu()">Home</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#google-maps" class="menu__link link__hover-effect
+                            link__hover-effect--white" onclick="closeMenu()">Product Quality</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#builds" class="menu__link link__hover-effect
+                            link__hover-effect--white" onclick="closeMenu()">Products</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#google-maps" class="menu__link link__hover-effect
+                            link__hover-effect--white" onclick="closeMenu()">Google Maps</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#about-us" class="menu__link link__hover-effect
+                                                        link__hover-effect--white" onclick="closeMenu()">About</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#contact" class="menu__link link__hover-effect
+                            link__hover-effect--white" onclick=" closeMenu()">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header id="header" class="bg-header">
+            <div class="bg-overlay"></div>
+            <div class="header__display--table">
+                <div class="header__display--tabel-cell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="header__content">
+                                <h1 class="header__title">Puff Point Vape Shop</h1>
+                                <p class="header__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Distinctio incidunt</p>
+                                <p class="play__btn--wrapper">
+                                    <a href="#" class="play__btn--icon click">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                            </div>
+                            </p>
+                            <div class="video__wrapper">
+                                <iframe id="play__video" src="https://www.youtube.com/embed/NxSdA0oWKuU"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen hidden></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__wave-effect wave-anim">
+                <div class="header__wave-shape shape-one">
+                    <div class="wave__img wave-one" draggable="false"
+                        style="background-image: url('./assets/anim_wave.png')">
+                    </div>
+                </div>
+                <div class="header__wave-shape shape-two">
+                    <div class="wave__img wave-two" draggable="false"
+                        style="background-image: url('./assets/anim_wave2.png')">
+                    </div>
+                </div>
+                <div class="header__wave-shape shape-three">
+                    <div class="wave__img wave-three" draggable="false"
+                        style="background-image: url('./assets/anim_wave3.png')">
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section id="product-quality">
+        <div class="container">
+            <div class="row product-quality__row">
+                <div class="header__content product-quality__header--content">
+                    <h1 class="header__title product-quality__header--title">Product Quality</h1>
+                    <div class="section__title--border"></div>
+                    <p class="header__para product-quality__header--para">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Consequuntur eius a voluptatum
+                        exercitationem, iusto temporibus reprehenderit id, magnam in quae facilis ipsam, inventore
+                        dolores quisquam iure nisi iste magni nulla.
+                    </p>
+                </div>
+                <div class="product-quality__wrapper">
+                    <div class="product-quality">
+                        <div class="product-quality__img">
+                            <i class="far fa-gem"></i>
+                        </div>
+                        <h4 class="product-quality__subtitle">
+                            Lorem ipsum
+                        </h4>
+                        <p class="product-quality__para">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam nemo dicta nam harum
+                            consequuntur
+                        </p>
+                    </div>
+                    <div class="product-quality">
+                        <div class="product-quality__img">
+                            <i class="far fa-gem"></i>
+                        </div>
+                        <h4 class="product-quality__subtitle">
+                            Lorem ipsum
+                        </h4>
+                        <p class="product-quality__para">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam nemo dicta nam harum
+                            consequuntur
+                        </p>
+                    </div>
+                    <div class="product-quality">
+                        <div class="product-quality__img">
+                            <i class="far fa-gem"></i>
+                        </div>
+                        <h4 class="product-quality__subtitle">
+                            Lorem ipsum
+                        </h4>
+                        <p class="product-quality__para">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam nemo dicta nam harum
+                            consequuntur
+                        </p>
+                    </div>
+                    <div class="product-quality">
+                        <div class="product-quality__img">
+                            <i class="far fa-gem"></i>
+                        </div>
+                        <h4 class="product-quality__subtitle">
+                            Lorem ipsum
+                        </h4>
+                        <p class="product-quality__para">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam nemo dicta nam harum
+                            consequuntur
+                        </p>
+                    </div>
+                    <div class="product-quality">
+                        <div class="product-quality__img">
+                            <i class="far fa-gem"></i>
+                        </div>
+                        <h4 class="product-quality__subtitle">
+                            Lorem ipsum
+                        </h4>
+                        <p class="product-quality__para">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam nemo dicta nam harum
+                            consequuntur
+                        </p>
+                    </div>
+                    <div class="product-quality">
+                        <div class="product-quality__img">
+                            <i class="far fa-gem"></i>
+                        </div>
+                        <h4 class="product-quality__subtitle">
+                            Lorem ipsum
+                        </h4>
+                        <p class="product-quality__para">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam nemo dicta nam harum
+                            consequuntur
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="builds">
+        <div class="container">
+            <div class="row builds__row">
+                <div class="header__content google-maps__header--content">
+                    <h1 class="header__title google-maps__header--title">Product Samples</h1>
+                    <div class="section__title--border"></div>
+                    <p class="header__para google-maps__header--para">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit earum natur, libero maiores eum, consectetur..
+                    </p>
+                </div>
+                <div class="builds__wrapper">
+                    <div class="build">
+                        <div class="build__card">
+                            <figure class="build__img--figure">
+                                <img draggable="false" src="./assets/vape_1.jpeg" alt="" class="build__img">
+                            </figure>
+                            <div class="build__border"></div>
+                            <div class="build__features">
+                                <p class="build__feature">
+                                    <strong class="text--orange text-uppercase">Description</strong>
+                                </p>
+                                <p class="build__feature">
+                                    <strong class="text--orange">Name:</strong> lorem
+                                </p>
+                                <p class="build__feature">
+                                    <strong class="text--orange">Brand:</strong> lorem
+                                </p>
+                            </div>
+                            <a href="#google-maps">
+                                <div class="btn build__btn">Buy Now</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="build">
+                        <div class="build__card">
+                            <figure class="build__img--figure">
+                                <img draggable="false" src="./assets/vape_1.jpeg" alt="" class="build__img">
+                            </figure>
+                            <div class="build__border"></div>
+                            <div class="build__features">
+                                <p class="build__feature">
+                                    <strong class="text--orange text-uppercase">Description</strong>
+                                </p>
+                                <p class="build__feature">
+                                    <strong class="text--orange">Name:</strong> lorem
+                                </p>
+                                <p class="build__feature">
+                                    <strong class="text--orange">Brand:</strong> lorem
+                                </p>
+                            </div>
+                            <a href="#google-maps">
+                                <div class="btn build__btn">Buy Now</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="build">
+                        <div class="build__card">
+                            <figure class="build__img--figure">
+                                <img draggable="false" src="./assets/vape_1.jpeg" alt="" class="build__img">
+                            </figure>
+                            <div class="build__border"></div>
+                            <div class="build__features">
+                                <p class="build__feature">
+                                    <strong class="text--orange text-uppercase">Description</strong>
+                                </p>
+                                <p class="build__feature">
+                                    <strong class="text--orange">Name:</strong> lorem
+                                </p>
+                                <p class="build__feature">
+                                    <strong class="text--orange">Brand:</strong> lorem
+                                </p>
+                            </div>
+                            <a href="#google-maps">
+                                <div class="btn build__btn">Buy Now</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="google-maps" class="google-maps__bg--img" draggable="false">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="google-maps__content">
+                    <h2 class="google-maps__content--title">
+                        Find us on Google Maps!
+                    </h2>
+                    <p class="google-maps__content--para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, mollitia in at cupiditate
+                        distinctio omnis quos accu
+                    </p>
+                    <button href="#" class="btn google-maps__btn no--cursor">
+                        Google Maps
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bg__pattern-effect">
+            <img class="bg__img" src="./assets/bg-pattern.png" alt="" draggable="false">
+        </div>
+    </section>
+    <!-- <section id="team-leaders">
+        <div class="container">
+            <div class="row">
+                <div class="header__content google-maps__header--content">
+                    <h1 class="header__title google-maps__header--title">Leadership</h1>
+                    <div class="section__title--border"></div>
+                    <p class="header__para google-maps__header--para">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit earum natur, libero maiores eum, consectetur..
+                    </p>
+                </div>
+                <div class="team-leaders__card--wrapper">
+                    <div class="team-leaders__card">
+                        <figure class="card__img--figure">
+                            <img class="card__img"
+                                src="https://assets.entrepreneur.com/content/3x2/2000/20190918135414-tommy-shelby-peaky-blinders.jpeg?crop=1:1"
+                                alt="">
+                        </figure>
+                        <h4 class="card__name">
+                            Lorem ipsum
+                        </h4>
+                        <p class="card__title">
+                            Team Captian
+                        </p>
+                    </div>
+                    <div class="team-leaders__card">
+                        <figure class="card__img--figure">
+                            <img class="card__img"
+                                src="https://assets.entrepreneur.com/content/3x2/2000/20190918135414-tommy-shelby-peaky-blinders.jpeg?crop=1:1"
+                                alt="">
+                        </figure>
+                        <h4 class="card__name">
+                            Digital Design
+                        </h4>
+                        <p class="card__title">
+                            Team Captian
+                        </p>
+                    </div>
+                    <div class="team-leaders__card">
+                        <figure class="card__img--figure">
+                            <img class="card__img"
+                                src="https://assets.entrepreneur.com/content/3x2/2000/20190918135414-tommy-shelby-peaky-blinders.jpeg?crop=1:1"
+                                alt="">
+                        </figure>
+                        <h4 class="card__name">
+                            Digital Design
+                        </h4>
+                        <p class="card__title">
+                            Team Captian
+                        </p>
+                    </div>
+                    <div class="team-leaders__card">
+                        <figure class="card__img--figure">
+                            <img class="card__img"
+                                src="https://assets.entrepreneur.com/content/3x2/2000/20190918135414-tommy-shelby-peaky-blinders.jpeg?crop=1:1"
+                                alt="">
+                        </figure>
+                        <h4 class="card__name">
+                            Digital Design
+                        </h4>
+                        <p class="card__title">
+                            Team Captian
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="about-us">
+        <div class="container">
+            <div class="about-us__content row">
+                <div class="about-us__content--left">
+                    <div class="about-us__box">
+                        <h3 class="about-us__box--title">
+                            About Us
+                        </h3>
+                        <p class="about-us__box--para">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi alias ad dolorem tenetur
+                            perspiciatis similique illo magnam ea nam quo cumque delectus, voluptates molestiae, esse
+                            voluptatem ipsa? Inventore, ex cum.
+                        </p>
+                        <ul class="about-us__box--lists">
+                            <li class="about-us__box--list">
+                                Lorem ipsum dolor sit amet consectetur
+                            </li>
+                            <li class="about-us__box--list">
+                                Lorem ipsum dolor sit amet consectetur
+                            </li>
+                            <li class="about-us__box--list">
+                                Lorem ipsum dolor sit amet consectetur
+                            </li>
+                            <li class="about-us__box--list">
+                                Lorem ipsum dolor sit amet consectetur
+                            </li>
+                        </ul>
+                        <button href="#" class="btn no--cursor">
+                            Learn More
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="about-us__content--right">
+                    <div class="about-us__img--figure">
+                        <img src="./assets/vape_shop.jpeg" alt="" class="about-us__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row contact__row">
+                <div class="header__content google-maps__header--content">
+                    <h1 class="header__title google-maps__header--title text-uppercase">Get in Touch</h1>
+                    <div class="section__title--border"></div>
+                    <p class="header__para google-maps__header--para">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Velit earum natur, libero maiores eum, consectetur..
+                    </p>
+                </div>
+                <form class="contact__form" onsubmit="contact(event)">
+                    <div class="modal__overlay modal__overlay--success">
+                        Thanks for the message!
+                    </div>
+                    <div class="contact__personal--info">
+                        <input type="text" name="user_name" class="contact__input contact__form--name"
+                            placeholder="Your Name" required>
+                        <input type="email" name="user_email" class="contact__input contact__form--email"
+                            placeholder="Your Email" required>
+                    </div>
+                    <input type="text" name="subject" class="contact__input contact__form--subject"
+                        placeholder="Your Subject">
+                    <textarea style="resize: none;" name="message" type="text"
+                        class="contact__input contact__form--message" placeholder="Your message"></textarea>
+                    <div class="contact__btn--wrapper">
+                        <button class="btn contact__btn"><span class="contact__btn--text">Send Message</span></button>
+                        <div class="modal__overlay modal__overlay--loading">
+                            <i class="fas fa-spinner"></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <a href="#" class="footer__anchor">
+                    <figure>
+                        <img class="footer__logo--img logo--white click" src="./assets/logo.jpeg" alt="" />
+                    </figure>
+                    <span class="footer__logo--popper click">
+                        Top
+                        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <div class="footer__social--list">
+                    <a href="#" target="_blank" class="
+                          footer__social--link
+                          link__hover-effect link__hover-effect--white">
+                        Instagram
+                    </a>
+                    <a href="#" target="_blank" class="
+                          footer__social--link
+                          link__hover-effect link__hover-effect--white">
+                        Facebook
+                    </a>
+                    <a href="#" target="_blank" class="
+                          footer__social--link
+                          link__hover-effect link__hover-effect--white">
+                        TikTok
+                    </a>
+                </div>
+                <div class="footer__copyright">Copyright &copy;
+                    <script>new Date().getFullYear() > 2017 && document.write(new Date().getFullYear());</script> Puff
+                    Point
+                    Vape Shop
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
